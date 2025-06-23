@@ -7,7 +7,7 @@
 
   box-sizing: border-box;
 
-  background: url("../../../assets/images/contact/bg-contact.jpg") center/cover
+  background: url("../../../assets/images/contact/bg-contact.webp") center/cover
     fixed;
 
   display: flex;
@@ -32,6 +32,8 @@
 
     .title,
     .description {
+      color: var(--gray-e) !important;
+
       text-align: center;
     }
   }

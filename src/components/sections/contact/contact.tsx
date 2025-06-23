@@ -4,7 +4,7 @@ import React, { useState, useRef } from "react";
 import { useTranslation } from "@hooks/useTranslation";
 
 //? images & styles
-import image from "@images/contact/contact-1.png";
+import image from "@images/contact/contact-1.webp";
 
 import "./contact.scss";
 

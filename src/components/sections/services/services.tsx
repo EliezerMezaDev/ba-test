@@ -6,8 +6,8 @@ import { useTranslation } from "@hooks/useTranslation";
 import { LanguageContext } from "@context/LanguageContext";
 
 //? images & styles
-import services1 from "@images/services/services-1.png";
-import services2 from "@images/services/services-2.png";
+import services1 from "@images/services/services-1.webp";
+import services2 from "@images/services/services-2.webp";
 
 import "./services.scss";
 

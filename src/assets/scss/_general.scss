@@ -17,7 +17,7 @@ body {
 #___gatsby {
   position: relative;
   width: 100vw;
-  background-image: url(../images/bg-mobile-portrait.jpg);
+  background-image: url(../images/bg-mobile-portrait.webp);
   background-position: center center;
   background-size: cover;
 }
@@ -136,7 +136,7 @@ h3 {
 @include custom-respond-to(568) {
   @media (orientation: landscape) {
     #___gatsby {
-      background-image: url(../images/bg-mobile-landscape.jpg);
+      background-image: url(../images/bg-mobile-landscape.webp);
     }
 
     .description {
@@ -153,7 +153,7 @@ h3 {
 @include custom-respond-to(768) {
   @media (orientation: portrait) {
     #___gatsby {
-      background-image: url(../images/bg-tablet-portrait.jpg);
+      background-image: url(../images/bg-tablet-portrait.webp);
     }
   }
 }
@@ -161,7 +161,7 @@ h3 {
 @include custom-respond-to(1024) {
   @media (orientation: landscape) {
     #___gatsby {
-      background-image: url(../images/bg-tablet-landscape.jpg);
+      background-image: url(../images/bg-tablet-landscape.webp);
     }
 
     .container-layout {
@@ -184,7 +184,7 @@ h3 {
 
 @include custom-respond-to(1280) {
   #___gatsby {
-    background-image: url(../images/bg-desk.jpg);
+    background-image: url(../images/bg-desk.webp);
     background-position: top right;
   }
 
