@@ -8,11 +8,25 @@
   box-sizing: border-box;
 
   background: linear-gradient(
-      0deg,
+      10deg,
       rgba(245, 245, 245, 0.4),
       rgba(245, 245, 245, 0.6)
     ),
-    url("/assets/images/contact/bg-contact.webp") center/cover fixed;
+    url() center/cover fixed;
+  background-blend-mode: lighten;
+
+  background-image: linear-gradient(
+      10deg,
+      rgba(245, 245, 245, 0.4),
+      rgba(245, 245, 245, 0.6)
+    ),
+    url("../../../assets/images/contact/bg-contact.webp");
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   background-blend-mode: lighten;
 
   display: flex;
