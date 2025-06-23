@@ -6,20 +6,8 @@
   padding: 10dvh 0;
   box-sizing: border-box;
 
-  background: linear-gradient(
-      10deg,
-      rgba(245, 245, 245, 0.4),
-      rgba(245, 245, 245, 0.6)
-    ),
-    url() center/cover fixed;
-  background-blend-mode: lighten;
-
-  background-image: linear-gradient(
-      10deg,
-      rgba(245, 245, 245, 0.4),
-      rgba(245, 245, 245, 0.6)
-    ),
-    url("../../../assets/images/services/bg-services.webp");
+  background: url("../../../assets/images/services/bg-services.webp")
+    center/cover fixed;
 
   background-position: center center;
   background-size: cover;
@@ -27,7 +15,6 @@
   background-attachment: fixed;
 
   background-blend-mode: lighten;
-
 
   display: flex;
   justify-content: center;

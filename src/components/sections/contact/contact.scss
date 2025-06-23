@@ -7,20 +7,8 @@
 
   box-sizing: border-box;
 
-  background: linear-gradient(
-      10deg,
-      rgba(245, 245, 245, 0.4),
-      rgba(245, 245, 245, 0.6)
-    ),
-    url() center/cover fixed;
-  background-blend-mode: lighten;
-
-  background-image: linear-gradient(
-      10deg,
-      rgba(245, 245, 245, 0.4),
-      rgba(245, 245, 245, 0.6)
-    ),
-    url("../../../assets/images/contact/bg-contact.webp");
+  background: url("../../../assets/images/contact/bg-contact.webp") center/cover
+    fixed;
 
   background-position: center center;
   background-size: cover;
