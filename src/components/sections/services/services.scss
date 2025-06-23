@@ -6,8 +6,12 @@
   padding: 10dvh 0;
   box-sizing: border-box;
 
-  background: url("../../../assets/images/services/bg-services.webp")
-    center/cover fixed;
+  background: linear-gradient(
+      0deg,
+      rgb(245, 245, 245, 0.4),
+      rgb(245, 245, 245, 0.6)
+    ),
+    url("../../../assets/images/services/bg-services.webp") center/cover fixed;
 
   display: flex;
   justify-content: center;

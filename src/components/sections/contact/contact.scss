@@ -7,8 +7,16 @@
 
   box-sizing: border-box;
 
-  background: url("../../../assets/images/contact/bg-contact.webp") center/cover
-    fixed;
+  /*
+  background: url("../../../assets/images/contact/bg-contact.webp") center/cover fixed;
+
+  */
+  background: linear-gradient(
+      0deg,
+      rgb(245, 245, 245, 0.4),
+      rgb(245, 245, 245, 0.6)
+    ),
+    url("../../../assets/images/contact/bg-contact.webp") center/cover fixed;
 
   display: flex;
   justify-content: center;
@@ -32,8 +40,6 @@
 
     .title,
     .description {
-      color: var(--gray-e) !important;
-
       text-align: center;
     }
   }
