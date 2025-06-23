@@ -1,0 +1,61 @@
+@use "sass:map";
+
+$spacing-unit: 0.5rem;
+$breakpoints: (
+  mobile: 320px,
+  tablet: 768px,
+  desktop: 1280px,
+);
+
+:root {
+  --green-a: #0e2d1d;
+  --green-b: #2c4739;
+  --green-c: #267a4f;
+  --green-d: #4b7a62;
+  --green-e: #4b7a62;
+  --gray-a: #4e4e4e;
+  --gray-b: #ebebeb;
+  --gray-c: #d1d1d1;
+  --gray-d: #3c3c3c;
+  --gray-e: #f5f5f5;
+}
+
+@mixin define-respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "invalid breakpoint";
+  }
+}
+
+@mixin custom-respond-to($breakpoint) {
+  @media (min-width: #{$breakpoint}px) {
+    @content;
+  }
+}
+
+@mixin orientation($orientation) {
+  @media (orientation: $orientation) {
+    @content;
+  }
+}
+
+@mixin flex-container($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-column-center {
+  @include flex-container(column);
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-columns($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $spacing-unit * 2;
+}

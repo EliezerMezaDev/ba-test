@@ -1,0 +1,213 @@
+@use "../../../assets/scss/variables" as *;
+
+.header {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+
+  background: var(--gray-b);
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-main {
+    width: 100%;
+    padding: 1vh 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 2vw;
+  }
+
+  &__logo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+
+    a {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 1vw;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: var(--green-b);
+    transition: background-color 0.3s ease;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: var(--green-c);
+    }
+
+    &:focus {
+      background-color: var(--green-c);
+    }
+  }
+}
+
+/* Mobile Portrait (320px) */
+@include custom-respond-to(320) {
+  .header {
+    z-index: 1;
+    position: fixed;
+
+    &__logo-wrapper {
+      width: 27vw;
+      height: 27vw;
+      padding: 2vh 1.5vh;
+      box-sizing: border-box;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+    }
+
+    &__button {
+      font-size: 0.7rem;
+      padding: 1vh;
+      background-color: transparent;
+      color: var(--gray-a);
+      font-weight: 500;
+
+      &:hover {
+        border-bottom: 1px solid var(--green-c);
+        background-color: transparent;
+      }
+
+      &:focus {
+        border-bottom: 2px solid var(--green-c);
+        background-color: transparent;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* Mobile Landscape (568px) */
+@include custom-respond-to(568) {
+  .header {
+    &__logo-wrapper {
+      width: 14vw;
+      height: 14vw;
+      padding: 4vh 3vh;
+    }
+
+    &__logo {
+      justify-content: left;
+    }
+
+    &__list {
+      gap: 2vw;
+    }
+
+    &__item {
+      flex-direction: column;
+      justify-content: center;
+
+      max-width: fit-content;
+    }
+
+    &__button {
+      font-size: 0.75rem;
+      padding: 2vh 3vh;
+    }
+  }
+}
+
+/* Tablet Portrait (768px) */
+@include custom-respond-to(768) {
+  .header {
+    .container-main {
+      flex-direction: row;
+      gap: 4vw;
+    }
+
+    &__logo-wrapper {
+      width: 16vw;
+      height: 16vw;
+    }
+
+    &__button {
+      font-size: 0.8rem;
+      color: white;
+      background-color: var(--green-b);
+      padding: 1vh 2vh;
+
+      &:hover {
+        background-color: var(--green-c);
+      }
+
+      &:focus {
+        background-color: var(--green-c);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/* Desktop (1280px) */
+@include custom-respond-to(1280) {
+  .header {
+    &__logo-wrapper {
+      width: 11vw;
+      height: 11vw;
+    }
+
+    &__logo {
+      justify-content: center;
+    }
+
+    &__button {
+      font-size: 0.9rem;
+      padding: 1.5vh 3vh;
+    }
+  }
+}

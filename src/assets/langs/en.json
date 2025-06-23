@@ -1,0 +1,140 @@
+{
+  "static": {
+    "lang": "en",
+    "nav": {
+      "buttonA": "About us",
+      "buttonB": "Our services",
+      "buttonC": "Invoiced services",
+      "buttonD": "Contact"
+    },
+    "footer": {
+      "legal": "© All rights reserved ",
+      "author": " | Designed by:"
+    },
+    "button": {
+      "text": "Learn more"
+    },
+    "contact": {
+      "button": "Send message",
+      "form": {
+        "namePlaceholder": "First name",
+        "lastNamePlaceholder": "Last name",
+        "phonePlaceholder": "Phone",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Message"
+      }
+    }
+  },
+  "welcome": {
+    "content": {
+      "info": {
+        "title": "All your taxes and tax compliance up to date!",
+        "description": "We are a professional team dedicated to calculating taxes and tax compliance. Keep all of your taxes updated without worrying about any procedures, we will take care of it."
+      },
+      "ctaTitle": "Learn more"
+    }
+  },
+  "aboutUs": {
+    "content": {
+      "info": {
+        "title": "It's our desire to become your allies",
+        "description": "Our aim is supporting you with everything related to taxes and accounting to the level of being considered as another department of your organization.",
+        "subtitle": "Mainly, we want to highlight:"
+      },
+      "attributesList": [
+        {
+          "label": "Compromise",
+          "desc": "We're compromised with you and your tax and accounting procedures. Our goal is reducing charges and avoiding them completely."
+        },
+        {
+          "label": "Trust",
+          "desc": "We want to transmit the tranquility that your taxes and accounting are in good hands."
+        },
+        {
+          "label": "Quality",
+          "desc": "We comprehend the importance and sensibility of tax and accounting procedures."
+        },
+        {
+          "label": "Responsibility",
+          "desc": "We work as fast as we can to comply with our agreements."
+        },
+        {
+          "label": "Vocation of service",
+          "desc": "We like what we do. Good delivered service redounds in advantages for both of us."
+        }
+      ],
+      "attributesTitle": "What guide or characterize us?",
+      "attributesDescription": "Mainly, we want to highlight:"
+    }
+  },
+  "services": {
+    "content": {
+      "info": {
+        "title": "Our Services",
+        "description": "We're dedicated to accounting which includes taxes and payroll, and some other services related with human resources."
+      },
+      "specialties": [
+        {
+          "name": "Accounting and taxes",
+          "list": [
+            {
+              "specialty": "accounting",
+              "title": "Monthly services",
+              "items": "- Sales Taxes & Liquor Taxes.\n- Monthly Accounting.\n- Payroll & Payroll Taxes."
+            },
+            {
+              "specialty": "accounting",
+              "title": "Quarterly Services",
+              "items": "- Quarterly Tax Returns.\n- Profit and Loss Reports.\n- Estimated Taxes."
+            },
+            {
+              "specialty": "accounting",
+              "title": "Annual Services",
+              "items": "- Payroll Year End Reports and compliance.\n- W-2's for Employees.\n- Financial Statements (P&L/Balance Sheet).\n- Property Tax.\n- Corporate License Renewal.\n- Audits for Workers Compensation and General Liability."
+            }
+          ]
+        },
+        {
+          "name": "Human resources",
+          "list": [
+            {
+              "specialty": "hr",
+              "title": "Annual Services",
+              "items": "- Employee Manuals Review.\n- Wage Compliance in Accordance with the Department of Labor.\n- No Aggression Policy."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "additionals": {
+    "content": {
+      "info": {
+        "title": "Invoiced Services",
+        "description": "Besides the recurrent services we offer, we can help you with the following services:"
+      },
+      "list": [
+        {
+          "name": "Tax Resolutions",
+          "items": "- Corporate Tax Returns.\n- Tax Resolutions.\n- IRS or State Audits."
+        },
+        {
+          "name": "Compliance",
+          "items": "- Labor Department and EEOC.\n- Meetings with Lawyers.\n- Support with Investigations, Mediations and Dispute Audits."
+        },
+        {
+          "name": "Licensing",
+          "items": "- New License / Permit Applications / Renewals.\n- Incorporations.\n- Projections for Commercial Real Estate.\n- Trademark."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "content": {
+      "info": {
+        "title": "Contact",
+        "description": "You are one step ahead of forgetting about fines and sanctions. Send us a message and we will get in contact with you for more details."
+      }
+    }
+  }
+}

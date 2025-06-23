@@ -1,0 +1,140 @@
+{
+  "static": {
+    "lang": "es",
+    "nav": {
+      "buttonA": "Nosotros",
+      "buttonB": "Especialidades",
+      "buttonC": "Servicios adicionales",
+      "buttonD": "Contacto"
+    },
+    "footer": {
+      "legal": "© Derechos reservados",
+      "author": " | Diseñado por:"
+    },
+    "button": {
+      "text": "Leer más"
+    },
+    "contact": {
+      "button": "Enviar mensaje",
+      "form": {
+        "namePlaceholder": "Nombre",
+        "lastNamePlaceholder": "Apellido",
+        "phonePlaceholder": "Teléfono",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Mensaje"
+      }
+    }
+  },
+  "welcome": {
+    "content": {
+      "info": {
+        "title": "Tenga sus impuestos y obligaciones tributarias al día",
+        "description": "Somos un equipo de profesionales dedicados al cálculo de impuestos y al cumplimiento de obligaciones fiscales. Ten al día tus tributos sin preocuparte de los trámites que de eso nos encargamos nosotros"
+      },
+      "ctaTitle": "Conócenos"
+    }
+  },
+  "aboutUs": {
+    "content": {
+      "info": {
+        "title": "Queremos convertirnos en tus aliados",
+        "description": "Nuestro objetivo es apoyarte en todo lo relacionado con impuestos y contabilidad al punto de ser considerados como un departamento más dentro de tu organización empresarial.",
+        "subtitle": "Principalmente, queremos destacar:"
+      },
+      "attributesList": [
+        {
+          "label": "Compromiso",
+          "desc": "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo."
+        },
+        {
+          "label": "Confianza",
+          "desc": "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos."
+        },
+        {
+          "label": "Calidad",
+          "desc": "Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables."
+        },
+        {
+          "label": "Responsabilidad",
+          "desc": "Actuamos de la manera más expedita posible para cumplir nuestros acuerdos."
+        },
+        {
+          "label": "Vocación de servicio",
+          "desc": "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos."
+        }
+      ],
+      "attributesTitle": "¿Qué nos guía o nos caracteriza?",
+      "attributesDescription": "Principalmente, queremos destacar:"
+    }
+  },
+  "services": {
+    "content": {
+      "info": {
+        "title": "Nuestros servicios",
+        "description": "Nos dedicamos a la contabilidad, incluidos los impuestos y la nómina, y algunos servicios relacionados con recursos humanos."
+      },
+      "specialties": [
+        {
+          "name": "Contabilidad e impuestos",
+          "list": [
+            {
+              "specialty": "contabilidad",
+              "title": "Servicios mensuales",
+              "items": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados."
+            },
+            {
+              "specialty": "contabilidad",
+              "title": "Servicios trimestrales",
+              "items": "- Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
+            },
+            {
+              "specialty": "contabilidad",
+              "title": "Servicios anuales",
+              "items": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
+            }
+          ]
+        },
+        {
+          "name": "Recursos humanos",
+          "list": [
+            {
+              "specialty": "hr",
+              "title": "Servicios anuales",
+              "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "additionals": {
+    "content": {
+      "info": {
+        "title": "Servicios adicionales",
+        "description": "Además de los servicios recurrentes que ofrecemos, podemos asistirte en los siguientes servicios:"
+      },
+      "list": [
+        {
+          "name": "Resoluciones fiscales",
+          "items": "- Declaración de impuestos corporativos.\n- IRS o auditorías estatales.\n- Resoluciones fiscales en general."
+        },
+        {
+          "name": "Cumplimiento",
+          "items": "- Departamento laboral y EEOC.\n- Reuniones con abogados.\n- Apoyo con investigaciones, mediaciones y disputas en auditorías."
+        },
+        {
+          "name": "Licencias",
+          "items": "- Adquisición de licencias.\n- Solicitud de permisos.\n- Renovaciones.\n- Incorporaciones.\n- Proyecciones de bienes raíces comerciales.\n- Marca comercial."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "content": {
+      "main": {
+        "title": "Contacto",
+        "description": "Estás a un paso de olvidarte de las multas y cierres. Escríbenos y nos pondremos en contacto para más detalles."
+      }
+    }
+  }
+}

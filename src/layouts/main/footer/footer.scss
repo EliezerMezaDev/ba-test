@@ -1,0 +1,99 @@
+@use "../../../assets/scss/variables" as *;
+
+.footer {
+  height: 11vh;
+
+  width: 100%;
+  background-color: var(--green-a);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .container-main {
+    width: 100%;
+    padding: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  & > div,
+  & > p {
+    display: flex;
+  }
+
+  &__rsss {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__copy {
+    font-size: 0.65rem;
+  }
+
+  &__item {
+    width: max(1.8vw, 20px);
+    height: max(1.8vw, 20px);
+
+    background-image: url(../../../assets/images/rrss-bg.svg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    font-size: 0.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+      color: var(--green-a);
+      cursor: pointer;
+    }
+  }
+
+  &__logo-novanet {
+    width: max(7vw, 70px);
+
+    filter: brightness(0) invert(1);
+
+    display: flex;
+  }
+
+  &__copy {
+    color: var(--gray-b);
+
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+/* Mobile  (568px) */
+@include custom-respond-to(568) {
+  .footer {
+    &__copy {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* Desktop (1280px) */
+@include custom-respond-to(1280) {
+  .footer {
+    &__copy {
+      font-size: 0.9rem;
+    }
+
+    &__logo-novanet {
+      width: 5vw;
+    }
+  }
+}

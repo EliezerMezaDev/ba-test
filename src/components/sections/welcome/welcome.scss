@@ -1,0 +1,58 @@
+@use "sass:color";
+@use "../../../assets/scss/variables" as *;
+
+.welcome {
+  width: 100%;
+  min-height: 100vh !important;
+  box-sizing: border-box;
+
+  background: url("../../../assets/images/bg-welcome.jpg") center/cover fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-main {
+    width: min(950px, 90vw);
+
+    height: fit-content;
+    padding: 4vh 4vw;
+    margin: 0;
+
+    background-color: rgba(#fff, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      border-bottom: 3px solid var(--green-c);
+    }
+
+    .title,
+    .description {
+      text-align: center;
+    }
+
+    .button {
+      cursor: pointer;
+      width: fit-content;
+      margin-top: 4vh;
+      padding: 1.5vh 5vh;
+      border: 0;
+      border-radius: 25px;
+      background-color: var(--green-c);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: color.adjust(#267a4f, $lightness: -10%);
+      }
+
+      &__text {
+        font-weight: 400;
+        color: white;
+      }
+    }
+  }
+}

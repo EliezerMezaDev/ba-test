@@ -1,0 +1,117 @@
+@use "../../../assets/scss/variables" as *;
+
+.services {
+  width: 100%;
+  min-height: 100dvh !important;
+  padding: 10dvh 0;
+  box-sizing: border-box;
+
+  background: url("../../../assets/images/bg-services.jpg") center/cover fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-main {
+    width: min(1280px, 90vw) !important;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      border-bottom: 5px solid var(--green-c);
+    }
+
+    .title,
+    .description {
+      text-align: center;
+    }
+
+    .list {
+      width: 100%;
+      max-width: 100%;
+      width: min(1124px, 90vw) !important;
+
+      margin-top: 10vh;
+
+      list-style: none;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: 4vh 0;
+
+      &__item {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0 2vw;
+
+        @include custom-respond-to(768) {
+          flex-direction: row;
+        }
+      }
+
+      &__image {
+        max-width: 250px;
+        height: fit-content;
+        margin-bottom: 3vh;
+        background-color: transparent !important;
+      }
+
+      &__info {
+        width: 100%;
+
+        &__title {
+          margin-bottom: 2vh;
+        }
+
+        &__content {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 1rem;
+
+          @include custom-respond-to(1024) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .detail {
+            background-color: var(--gray-e);
+            border: 1px solid var(--gray-b);
+            border-top: 3px solid var(--green-d);
+
+            &__title {
+              padding: 0.5rem 0;
+              margin-left: 0.5rem;
+            }
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 1vh;
+
+              li {
+                padding: 0.5rem;
+                list-style: none;
+
+                &::before {
+                  content: "\25AA";
+                  padding-right: 0.75vh;
+                  font-size: 1.3rem;
+                }
+
+                &:nth-child(even) {
+                  background-color: var(--gray-b);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

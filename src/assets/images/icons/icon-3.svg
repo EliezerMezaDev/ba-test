@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="buenaventura-tax-nosotros-vocacion-icono.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>buenaventura-tax-nosotros</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="746"
+     inkscape:window-height="480"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="35.666667"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
+  <title
+     id="title2">buenaventura-tax-nosotros</title>
+  <path
+     d="M13,7.57A1.43,1.43,0,1,0,14.43,9,1.43,1.43,0,0,0,13,7.57Z"
+     fill="#fff"
+     id="path4" />
+  <path
+     d="M13,2A7,7,0,0,0,6,8.64L4.1,11.2a.5.5,0,0,0,.4.8H6v3a2,2,0,0,0,2,2H9v3h7V15.32A7,7,0,0,0,13,2Zm3,7c0,.13,0,.26,0,.39l.83.66a.19.19,0,0,1,.05.25l-.8,1.39a.2.2,0,0,1-.24.09l-1-.4a3,3,0,0,1-.67.39L14,12.83a.2.2,0,0,1-.2.17H12.2a.2.2,0,0,1-.2-.17l-.15-1.06a2.86,2.86,0,0,1-.68-.39l-1,.4a.21.21,0,0,1-.25-.09l-.8-1.39a.19.19,0,0,1,0-.25L10,9.39c0-.13,0-.26,0-.39a2.45,2.45,0,0,1,0-.39L9.19,8a.2.2,0,0,1,0-.26l.8-1.38a.2.2,0,0,1,.24-.09l1,.4a3.17,3.17,0,0,1,.67-.39L12,5.17A.2.2,0,0,1,12.2,5h1.6a.2.2,0,0,1,.2.17l.15,1.06a3,3,0,0,1,.67.39l1-.4a.19.19,0,0,1,.24.09l.8,1.38a.2.2,0,0,1-.05.26L16,8.61A1.61,1.61,0,0,1,16,9Z"
+     fill="#fff"
+     id="path6" />
+</svg>
