@@ -11,15 +11,20 @@ import "./header.scss";
 const Header = () => {
   const t = useTranslation();
 
-  const scrollTo = () => {
-    console.log("Scroll function called");
+  const scrollTo = (target: string) => {
+    const el = document.getElementById(target);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "/";
+    }
   };
 
   return (
     <header className="header">
       <div className="container-main">
         <div className="header__logo">
-          <a onClick={() => scrollTo()} href="/">
+          <a onClick={() => scrollTo("sec-welcome")}>
             <img src={Logo} alt="Buenaventura.tax logo" />
           </a>
         </div>
@@ -29,8 +34,8 @@ const Header = () => {
               <button
                 className="header__button"
                 id="Nos"
-                onClick={(e) => {
-                  scrollTo();
+                onClick={() => {
+                  scrollTo("sec-about");
                 }}
               >
                 {t("static.nav.buttonA")}
@@ -40,8 +45,8 @@ const Header = () => {
               <button
                 className="header__button"
                 id="Esp"
-                onClick={(e) => {
-                  scrollTo();
+                onClick={() => {
+                  scrollTo("sec-services");
                 }}
               >
                 {t("static.nav.buttonB")}
@@ -51,8 +56,8 @@ const Header = () => {
               <button
                 className="header__button"
                 id="Ser"
-                onClick={(e) => {
-                  scrollTo();
+                onClick={() => {
+                  scrollTo("sec-additionals");
                 }}
               >
                 {t("static.nav.buttonC")}
@@ -62,8 +67,8 @@ const Header = () => {
               <button
                 className="header__button"
                 id="Con"
-                onClick={(e) => {
-                  scrollTo();
+                onClick={() => {
+                  scrollTo("sec-contact");
                 }}
               >
                 {t("static.nav.buttonD")}

@@ -25,23 +25,6 @@ const assets = [
   },
 ];
 
-const ServiceDetail = ({
-  source,
-}: {
-  source: {
-    specialty: String;
-    title: String;
-    items: string;
-  };
-}) => {
-  return (
-    <div className="detail">
-      <h4 className="detail__title">{source.title}</h4>
-      <ReactMarkdown children={source.items} />
-    </div>
-  );
-};
-
 const Services = () => {
   const t = useTranslation();
   const { translations } = useContext(LanguageContext);
@@ -69,7 +52,12 @@ const Services = () => {
                 <div className="list__info">
                   <h3 className="list__info__title">{s.name}</h3>
                   <div className="list__info__content">
-                    {s.list.map((detail) => ServiceDetail({ source: detail }))}
+                    {s.list.map((detail, index) => (
+                      <div className="detail" key={`detail_${index}`}>
+                        <h4 className="detail__title">{detail.title}</h4>
+                        <ReactMarkdown children={detail.items} />
+                      </div>
+                    ))}
                   </div>
                 </div>
               </li>

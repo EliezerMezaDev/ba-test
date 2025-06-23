@@ -1,49 +1,34 @@
-import * as React from "react"
-import { Link, HeadFC, PageProps } from "gatsby"
+import * as React from "react";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+//? gatsby
+import { HeadFC } from "gatsby";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+//? layouts
+import Main from "@layouts/main";
 
-const NotFoundPage: React.FC<PageProps> = () => {
+//? translations
+import { useTranslation } from "@hooks/useTranslation";
+
+//? images & styles
+import "../assets/scss/styles.scss";
+
+const NotFoundPage: React.FC = () => {
+  const t = useTranslation();
+
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <Main>
+      <section id="sec-notfound" className="notfound">
+        <h1 className="notfound__title">404</h1>
+        <h2 className="notfound__subtitle">{t("static.404.title")}</h2>
+        <p className="notfound__description">{t("static.404.description")}</p>
+        <a href="/" className="button notfound__button">
+          {t("static.404.button")}
+        </a>
+      </section>
+    </Main>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <title>Page not found</title>;

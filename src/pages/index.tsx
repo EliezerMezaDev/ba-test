@@ -1,5 +1,8 @@
 import React from "react";
 
+//? gatsby
+import { HeadFC } from "gatsby";
+
 //? layouts
 import Main from "@layouts/main";
 
@@ -19,4 +22,8 @@ const IndexPage = () => (
     <Contact />
   </Main>
 );
+
 export default IndexPage;
+
+
+export const Head: HeadFC = () => <title>Buenaventura.tax</title>;

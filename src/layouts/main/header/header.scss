@@ -54,9 +54,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 1vw;
     margin: 0;
     padding: 0;
+
+    @include custom-respond-to(480) {
+      gap: 1vw;
+    }
   }
 
   &__item {
@@ -68,18 +71,24 @@
   &__button {
     text-decoration: none;
     color: white;
-    font-size: 0.9rem;
-    font-weight: 400;
-    padding: 0 1vw;
+    font-size: 0.75rem;
+    padding: 0 0.5vw;
     margin: 0;
     border-radius: 0;
     border: 0;
     background-color: var(--green-b);
     transition: background-color 0.3s ease;
-    height: 48px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include custom-respond-to(480) {
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 0 1vw;
+      height: 48px;
+    }
 
     &:hover {
       background-color: var(--green-c);
@@ -106,7 +115,6 @@
 
     &__list {
       display: flex;
-      flex-wrap: wrap;
       align-content: flex-end;
     }
 

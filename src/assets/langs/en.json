@@ -22,7 +22,20 @@
         "phonePlaceholder": "Phone",
         "emailPlaceholder": "Email",
         "messagePlaceholder": "Message"
-      }
+      },
+      "error": {
+        "default": "Invalid form",
+        "errorEmail": "Invalid email",
+        "server": "Error sending the form. Please try again.",
+        "network": "There was a problem connecting to the server. Please try again later."
+      },
+      "success": "Form sent successfully! Thank you for contacting us.",
+      "sending": "Sending..."
+    },
+    "404": {
+      "title": "Page not found",
+      "description": "Sorry, the page you are looking for does not exist or has been moved.",
+      "button": "Go home"
     }
   },
   "welcome": {

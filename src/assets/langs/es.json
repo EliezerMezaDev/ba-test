@@ -22,7 +22,20 @@
         "phonePlaceholder": "Teléfono",
         "emailPlaceholder": "Email",
         "messagePlaceholder": "Mensaje"
-      }
+      },
+      "error": {
+        "default": "Formulario invalido",
+        "errorEmail": "Email invalido",
+        "server": "Error al enviar el formulario. Inténtalo de nuevo.",
+        "network": "Hubo un problema al conectar con el servidor. Por favor, inténtalo más tarde."
+      },
+      "success": "¡Formulario enviado con éxito! Gracias por contactarnos.",
+      "sending": "Enviando..."
+    },
+    "404": {
+      "title": "Página no encontrada",
+      "description": "Lo sentimos, la página que buscas no existe o ha sido movida.",
+      "button": "Volver al inicio"
     }
   },
   "welcome": {

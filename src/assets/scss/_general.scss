@@ -219,3 +219,36 @@ h3 {
     font-size: 1.4rem;
   }
 }
+
+.notfound {
+  width: 100%;
+  min-height: 89dvh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--green-b);
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: var(--gray-e);
+    text-decoration: none;
+  }
+}

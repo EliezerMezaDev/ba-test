@@ -18,6 +18,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   const [translations, setTranslations] = useState<TranslationData>(
     {} as TranslationData
   );
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const browserLang = navigator.language || (navigator as any).userLanguage;
@@ -27,6 +28,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   }, []);
 
   const loadTranslations = async (lang: string) => {
+    setLoading(true);
     try {
       const module = await import(`../assets/langs/${lang}.json`);
 
@@ -40,6 +42,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
       const fallback = await import("../assets/langs/en.json");
       setTranslations(fallback.default);
       setLanguage("es");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -53,7 +57,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
     <LanguageContext.Provider
       value={{ language, translations, changeLanguage }}
     >
-      {children}
+      {loading ? <div>Cargando...</div> : children}
     </LanguageContext.Provider>
   );
 };

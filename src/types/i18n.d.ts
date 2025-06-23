@@ -28,6 +28,14 @@ export interface TranslationData {
         emailPlaceholder: string;
         messagePlaceholder: string;
       };
+      error: {
+        default: string;
+        errorEmail: string;
+        server: string;
+        network: string;
+      };
+      success: string;
+      sending: string;
     };
   };
   principal: {
