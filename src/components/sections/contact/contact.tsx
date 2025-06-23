@@ -134,11 +134,22 @@ const Contact = () => {
           <p className="description">
             {t("contact.content.info.description")}
             {t("contact.content.link.part1")}
-            <a href={getEmailLink()} target="_blank" rel="noopener noreferrer">
+            <a
+              href={getEmailLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ whiteSpace: "nowrap" }}
+            >
               {EMAIL_TARGET}
             </a>
             {t("contact.content.link.part2")}
-            <a href="tel:+14705085455" target="_blank">+1 (470) 508‑5455</a>
+            <a
+              href="tel:+14705085455"
+              target="_blank"
+              style={{ whiteSpace: "nowrap" }}
+            >
+              +1 (470) 508‑5455
+            </a>
           </p>
 
           <div className="wrapper">
