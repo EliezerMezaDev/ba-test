@@ -8,10 +8,11 @@
 
   background: linear-gradient(
       0deg,
-      rgb(245, 245, 245, 0.4),
-      rgb(245, 245, 245, 0.6)
+      rgba(245, 245, 245, 0.4),
+      rgba(245, 245, 245, 0.6)
     ),
-    url("../../../assets/images/services/bg-services.webp") center/cover fixed !important;
+    url("/assets/images/services/bg-services.webp") center/cover fixed;
+  background-blend-mode: lighten;
 
   display: flex;
   justify-content: center;

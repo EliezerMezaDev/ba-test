@@ -7,9 +7,12 @@
 
   box-sizing: border-box;
 
-  background: url("../../../assets/images/contact/bg-contact.webp") center/cover
-      fixed,
-    linear-gradient(0deg, rgb(245, 245, 245, 0.4), rgb(245, 245, 245, 0.6));
+  background: linear-gradient(
+      0deg,
+      rgba(245, 245, 245, 0.4),
+      rgba(245, 245, 245, 0.6)
+    ),
+    url("/assets/images/contact/bg-contact.webp") center/cover fixed;
   background-blend-mode: lighten;
 
   display: flex;
