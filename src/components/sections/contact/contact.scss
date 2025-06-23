@@ -41,6 +41,18 @@
     .description {
       text-align: center;
     }
+
+    .description{
+      
+    a {
+      color: inherit;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: var(--green-e);
+      }
+    }
+    }
   }
 
   .wrapper {
@@ -123,4 +135,5 @@
       }
     }
   }
+
 }

@@ -147,6 +147,11 @@
       "info": {
         "title": "Contact",
         "description": "You are one step ahead of forgetting about fines and sanctions. Send us a message and we will get in contact with you for more details."
+      },
+      "emailSubjet": "Buenaventura.tax | CONTACT FROM FORM",
+      "link": {
+        "part1": " Or contact us directly at ",
+        "part2": " and at "
       }
     }
   }

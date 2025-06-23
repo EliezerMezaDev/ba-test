@@ -96,6 +96,11 @@ export interface TranslationData {
         title: string;
         description: string;
       };
+      emailSubjet: string;
+      link: {
+        part1: string;
+        part2: string;
+      };
     };
   };
 }

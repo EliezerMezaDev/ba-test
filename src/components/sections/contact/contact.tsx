@@ -8,6 +8,8 @@ import image from "@images/contact/contact-1.webp";
 
 import "./contact.scss";
 
+const EMAIL_TARGET = "info@buenaventura.tax";
+
 const Contact = () => {
   const t = useTranslation();
 
@@ -103,12 +105,41 @@ const Contact = () => {
     }
   };
 
+  function isMobileDevice() {
+    if (typeof window === "undefined" || typeof navigator === "undefined")
+      return false;
+
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  }
+
+  function getEmailLink() {
+    const subject = encodeURIComponent(
+      t("contact.content.emailSubjet", "Buenaventura.tax | CONTACT FROM FORM")
+    );
+
+    if (isMobileDevice()) {
+      return `mailto:${EMAIL_TARGET}?subject=${subject}`;
+    }
+
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL_TARGET}&su=${subject}`;
+  }
+
   return (
     <>
       <section id="sec-contact" className="contact">
         <div className="container-main">
           <h2 className="title">{t("contact.content.info.title")}</h2>
-          <p className="description">{t("contact.content.info.description")}</p>
+          <p className="description">
+            {t("contact.content.info.description")}
+            {t("contact.content.link.part1")}
+            <a href={getEmailLink()} target="_blank" rel="noopener noreferrer">
+              {EMAIL_TARGET}
+            </a>
+            {t("contact.content.link.part2")}
+            <a href="tel:+14705085455" target="_blank">+1 (470) 508‑5455</a>
+          </p>
 
           <div className="wrapper">
             <img
@@ -180,6 +211,7 @@ const Contact = () => {
               />
               {error && <div className="form__error">{error}</div>}
               {success && <div className="form__success">{success}</div>}
+
               <button
                 className="button form__button"
                 type="submit"
